@@ -70,6 +70,12 @@
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
     <Compile Include="Carts\CartManagement.cs" />
+    <Compile Include="Carts\IndexCartFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carts\IndexCartFrom.Designer.cs">
+      <DependentUpon>IndexCartFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,9 +122,18 @@
     <Compile Include="Producer.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Producers\IndexProducerFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producers\IndexProducerFrom.Designer.cs">
+      <DependentUpon>IndexProducerFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Producers\ProducerManagemenet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Carts\IndexCartFrom.resx">
+      <DependentUpon>IndexCartFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\AddItemFrom.resx">
       <DependentUpon>AddItemFrom.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\UpdateItemFrom.resx">
       <DependentUpon>UpdateItemFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producers\IndexProducerFrom.resx">
+      <DependentUpon>IndexProducerFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
