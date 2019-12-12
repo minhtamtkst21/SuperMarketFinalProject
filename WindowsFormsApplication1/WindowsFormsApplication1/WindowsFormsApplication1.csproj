@@ -69,6 +69,7 @@
     <Compile Include="Cart.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Carts\CartManagement.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,7 +79,25 @@
     <Compile Include="Item.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Items\AddItemFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\AddItemFrom.Designer.cs">
+      <DependentUpon>AddItemFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\IndexItemFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\IndexItemFrom.Designer.cs">
+      <DependentUpon>IndexItemFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\ItemManagement.cs" />
+    <Compile Include="Items\UpdateItemFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\UpdateItemFrom.Designer.cs">
+      <DependentUpon>UpdateItemFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,8 +116,18 @@
     <Compile Include="Producer.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Producers\ProducerManagemenet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Items\AddItemFrom.resx">
+      <DependentUpon>AddItemFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\IndexItemFrom.resx">
+      <DependentUpon>IndexItemFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\UpdateItemFrom.resx">
+      <DependentUpon>UpdateItemFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -139,10 +168,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Carts\" />
-    <Folder Include="Producers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="MyData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

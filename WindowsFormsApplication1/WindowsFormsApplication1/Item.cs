@@ -23,6 +23,8 @@ namespace WindowsFormsApplication1
         public string Code { get; set; }
         public string Name { get; set; }
         public Nullable<int> ProducerID { get; set; }
+        public int Amount { get; set; }
+        public int Price { get; set; }
     
         public virtual ICollection<Cart> Carts { get; set; }
         public virtual Producer Producer { get; set; }
