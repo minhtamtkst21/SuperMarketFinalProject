@@ -69,7 +69,7 @@
     <Compile Include="Cart.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
-    <Compile Include="Items\CartManagement.cs" />
+    <Compile Include="Carts\CartManagement.cs" />
     <Compile Include="Carts\IndexCartFrom.cs">
       <SubType>Form</SubType>
     </Compile>
