@@ -30,11 +30,11 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.updateProducerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddProducer = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEditProducer = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDeleteProducer = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.btnViewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnViewCart = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
@@ -65,18 +65,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnViewItem,
-            this.btnViewCart});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 288);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(361, 24);
-            this.menuStrip2.TabIndex = 2;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
             // updateProducerToolStripMenuItem
             // 
             this.updateProducerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -104,6 +92,18 @@
             this.btnDeleteProducer.Name = "btnDeleteProducer";
             this.btnDeleteProducer.Size = new System.Drawing.Size(158, 22);
             this.btnDeleteProducer.Text = "Delete Producer";
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnViewItem,
+            this.btnViewCart});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 288);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(361, 24);
+            this.menuStrip2.TabIndex = 2;
+            this.menuStrip2.Text = "menuStrip2";
             // 
             // btnViewItem
             // 
