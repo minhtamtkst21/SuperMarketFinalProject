@@ -26,12 +26,25 @@ namespace WindowsFormsApplication1.Carts
             cart.PriceUnit = priceunit;
             cart.Quantity = quantity;
             cart.Total = total;
+
+            db = new MyDataEntities();
+            db.Carts.Add(cart);
         }
         public void DeleteCart(int id)
         {
+            db = new MyDataEntities();
             var cart = db.Carts.Find(id);
 
             db.Carts.Remove(cart);
+        }
+        public void UpdateCart(int id,int quantity)
+        {
+            var cart = new Cart();
+            cart.Quantity = quantity;
+
+            db = new MyDataEntities();
+            db.Entry(cart).State = System.Data.EntityState.Modified;
+            db.SaveChanges();
         }
     }
 }

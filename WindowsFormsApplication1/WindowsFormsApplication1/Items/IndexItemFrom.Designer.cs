@@ -44,6 +44,7 @@
             this.btnViewProducer = new System.Windows.Forms.ToolStripMenuItem();
             this.btnViewCart = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnBuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdViewItem)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
@@ -178,11 +179,21 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
+            // btnBuy
+            // 
+            this.btnBuy.Location = new System.Drawing.Point(323, 252);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.Size = new System.Drawing.Size(75, 23);
+            this.btnBuy.TabIndex = 6;
+            this.btnBuy.Text = "Buy";
+            this.btnBuy.UseVisualStyleBackColor = true;
+            // 
             // IndexItemFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 276);
+            this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtFind);
             this.Controls.Add(this.btnFind);
@@ -220,5 +231,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnViewProducer;
         private System.Windows.Forms.ToolStripMenuItem btnViewCart;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnBuy;
     }
 }

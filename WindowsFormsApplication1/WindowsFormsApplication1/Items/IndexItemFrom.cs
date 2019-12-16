@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1.Items
     public partial class IndexItemFrom : Form
     {
         private ItemManagement businness;
+        private Carts.CartManagement Cbusiness;
         public IndexItemFrom()
         {
             InitializeComponent();
@@ -28,6 +29,20 @@ namespace WindowsFormsApplication1.Items
             this.grdViewItem.DoubleClick += btnEditItem_Click;
             this.btnClose.Click += btnClose_Click;
             businness = new ItemManagement();
+            Cbusiness = new Carts.CartManagement();
+            this.btnBuy.Click += btnBuy_Click;
+        }
+
+        void btnBuy_Click(object sender, EventArgs e)
+        {
+            if (this.grdViewItem.SelectedRows.Count == 1)
+            {
+                var item = (Item)this.grdViewItem.SelectedRows[0].DataBoundItem;
+                int quantity=1;
+                this.Cbusiness.AddCart(item.Name, item.Price, quantity, item.Price * quantity);
+                item.Amount -= 1;
+                this.loadAllItem();
+            }
         }
 
         void btnClose_Click(object sender, EventArgs e)
