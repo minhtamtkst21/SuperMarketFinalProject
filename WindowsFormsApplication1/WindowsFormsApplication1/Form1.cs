@@ -15,6 +15,20 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            this.btnLogin.Click += btnLogin_Click;
+        }
+
+        void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (this.txtPass.Text == "vlu")
+            {
+                new WindowsFormsApplication1.Items.IndexItemFrom().ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Fail Login!!!!!!!!!!!");
+                this.txtPass.Text = null;
+            }
         }
     }
 }

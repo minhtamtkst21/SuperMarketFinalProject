@@ -14,19 +14,11 @@ namespace WindowsFormsApplication1
     
     public partial class Item
     {
-        public Item()
-        {
-            this.Carts = new HashSet<Cart>();
-        }
-    
         public int Id { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
-        public Nullable<int> ProducerID { get; set; }
-        public int Amount { get; set; }
+        public Nullable<int> Producer { get; set; }
+        public Nullable<int> Amount { get; set; }
         public int Price { get; set; }
-    
-        public virtual ICollection<Cart> Carts { get; set; }
-        public virtual Producer Producer { get; set; }
     }
 }

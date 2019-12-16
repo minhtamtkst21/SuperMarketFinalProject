@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdViewCart = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnEditItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDeleteItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,22 +36,22 @@
             this.btnViewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnViewProducer = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdViewCart)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grdViewCart
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(331, 261);
-            this.dataGridView1.TabIndex = 0;
+            this.grdViewCart.AllowUserToAddRows = false;
+            this.grdViewCart.AllowUserToDeleteRows = false;
+            this.grdViewCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdViewCart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdViewCart.Location = new System.Drawing.Point(0, 24);
+            this.grdViewCart.Name = "grdViewCart";
+            this.grdViewCart.ReadOnly = true;
+            this.grdViewCart.Size = new System.Drawing.Size(331, 261);
+            this.grdViewCart.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -115,13 +115,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 309);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grdViewCart);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "IndexCartFrom";
             this.Text = "IndexCartFrom";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdViewCart)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
@@ -133,7 +133,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdViewCart;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnEditItem;
         private System.Windows.Forms.ToolStripMenuItem btnDeleteItem;

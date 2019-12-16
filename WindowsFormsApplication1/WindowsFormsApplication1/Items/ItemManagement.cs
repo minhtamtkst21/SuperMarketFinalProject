@@ -21,13 +21,14 @@ namespace WindowsFormsApplication1.Items
         }
         public void AddItem(string code, string name, int producer, int quantity, int price)
         {
-            var item = new Item();
+            var item = new Item();  
             item.Code = code;
             item.Name = name;
-            item.ProducerID = producer;
+            item.Producer = producer;
             item.Amount = quantity;
             item.Price = price;
 
+            db = new MyDataEntities();
             db.Items.Add(item);
             db.SaveChanges();
         }
@@ -35,18 +36,20 @@ namespace WindowsFormsApplication1.Items
         {
             var item = new Item();
             item.Name = name;
-            item.ProducerID = producer;
+            item.Producer = producer;
             item.Amount = quantity;
             item.Price = price;
 
+            db = new MyDataEntities();
             db.Entry(item).State = System.Data.EntityState.Modified;
             db.SaveChanges();
         }
         public void DeleteItem(int id)
         {
+            db = new MyDataEntities();
             var item = db.Items.Find(id);
-
             db.Items.Remove(item);
+            db.SaveChanges();
         }
     }
 }

@@ -37,12 +37,12 @@ namespace WindowsFormsApplication1.Items
 
         void btnViewProducer_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            new WindowsFormsApplication1.Producers.IndexProducerFrom().ShowDialog();
         }
 
         void btnViewCart_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            new WindowsFormsApplication1.Carts.IndexCartFrom().ShowDialog();
         }
 
         void btnViewQuantity_Click(object sender, EventArgs e)
@@ -80,7 +80,6 @@ namespace WindowsFormsApplication1.Items
             if (this.grdViewItem.SelectedRows.Count == 1)
             {
                 var item = (Item)this.grdViewItem.SelectedRows[0].DataBoundItem;
-
                 var updateForm = new UpdateItemFrom(item.Id);
                 updateForm.ShowDialog();
                 this.loadAllItem();
@@ -90,6 +89,7 @@ namespace WindowsFormsApplication1.Items
         void btnAddItem_Click(object sender, EventArgs e)
         {
             new AddItemFrom().ShowDialog();
+            this.loadAllItem();
         }
 
         void IndexItemFrom_Load(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace WindowsFormsApplication1.Items
         private void loadAllItem()
         {
             var item = this.businness.getItem();
-            this.grdViewItem.DataSource = item;
+            this.grdViewItem.DataSource =item;
         }
     }
 }

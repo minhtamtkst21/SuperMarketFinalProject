@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grbViewProducer = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.updateProducerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddProducer = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,22 +38,23 @@
             this.btnViewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnViewCart = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grbViewProducer)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grbViewProducer
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(361, 264);
-            this.dataGridView1.TabIndex = 0;
+            this.grbViewProducer.AllowUserToAddRows = false;
+            this.grbViewProducer.AllowUserToDeleteRows = false;
+            this.grbViewProducer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grbViewProducer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grbViewProducer.Location = new System.Drawing.Point(0, 24);
+            this.grbViewProducer.Name = "grbViewProducer";
+            this.grbViewProducer.ReadOnly = true;
+            this.grbViewProducer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grbViewProducer.Size = new System.Drawing.Size(361, 264);
+            this.grbViewProducer.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -132,13 +133,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(361, 312);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grbViewProducer);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "IndexProducerFrom";
             this.Text = "IndexProducerFrom";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grbViewProducer)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
@@ -150,7 +151,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grbViewProducer;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem updateProducerToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip2;

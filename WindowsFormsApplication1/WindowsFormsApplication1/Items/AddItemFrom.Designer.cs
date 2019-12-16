@@ -35,11 +35,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtProduce = new System.Windows.Forms.TextBox();
             this.txtQantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.cobProducer = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -101,13 +101,6 @@
             this.txtName.Size = new System.Drawing.Size(186, 20);
             this.txtName.TabIndex = 6;
             // 
-            // txtProduce
-            // 
-            this.txtProduce.Location = new System.Drawing.Point(54, 62);
-            this.txtProduce.Name = "txtProduce";
-            this.txtProduce.Size = new System.Drawing.Size(186, 20);
-            this.txtProduce.TabIndex = 7;
-            // 
             // txtQantity
             // 
             this.txtQantity.Location = new System.Drawing.Point(54, 88);
@@ -140,16 +133,24 @@
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
+            // cobProducer
+            // 
+            this.cobProducer.FormattingEnabled = true;
+            this.cobProducer.Location = new System.Drawing.Point(54, 63);
+            this.cobProducer.Name = "cobProducer";
+            this.cobProducer.Size = new System.Drawing.Size(186, 21);
+            this.cobProducer.TabIndex = 12;
+            // 
             // AddItemFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(265, 183);
+            this.Controls.Add(this.cobProducer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtQantity);
-            this.Controls.Add(this.txtProduce);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtCode);
             this.Controls.Add(this.label5);
@@ -173,10 +174,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtProduce;
         private System.Windows.Forms.TextBox txtQantity;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.ComboBox cobProducer;
     }
 }

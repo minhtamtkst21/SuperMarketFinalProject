@@ -58,7 +58,8 @@
             this.grdViewItem.Location = new System.Drawing.Point(0, 24);
             this.grdViewItem.Name = "grdViewItem";
             this.grdViewItem.ReadOnly = true;
-            this.grdViewItem.Size = new System.Drawing.Size(531, 228);
+            this.grdViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdViewItem.Size = new System.Drawing.Size(491, 228);
             this.grdViewItem.TabIndex = 0;
             // 
             // menuStrip1
@@ -68,7 +69,7 @@
             this.viewItemToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(531, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(491, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,19 +86,19 @@
             // btnAddItem
             // 
             this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(152, 22);
+            this.btnAddItem.Size = new System.Drawing.Size(134, 22);
             this.btnAddItem.Text = "Add item";
             // 
             // btnEditItem
             // 
             this.btnEditItem.Name = "btnEditItem";
-            this.btnEditItem.Size = new System.Drawing.Size(152, 22);
+            this.btnEditItem.Size = new System.Drawing.Size(134, 22);
             this.btnEditItem.Text = "Edit item";
             // 
             // btnDeleteItem
             // 
             this.btnDeleteItem.Name = "btnDeleteItem";
-            this.btnDeleteItem.Size = new System.Drawing.Size(152, 22);
+            this.btnDeleteItem.Size = new System.Drawing.Size(134, 22);
             this.btnDeleteItem.Text = "Delete item";
             // 
             // viewItemToolStripMenuItem
@@ -113,24 +114,24 @@
             // btnViewAZ
             // 
             this.btnViewAZ.Name = "btnViewAZ";
-            this.btnViewAZ.Size = new System.Drawing.Size(152, 22);
+            this.btnViewAZ.Size = new System.Drawing.Size(120, 22);
             this.btnViewAZ.Text = "AZ";
             // 
             // btnViewQuantity
             // 
             this.btnViewQuantity.Name = "btnViewQuantity";
-            this.btnViewQuantity.Size = new System.Drawing.Size(152, 22);
+            this.btnViewQuantity.Size = new System.Drawing.Size(120, 22);
             this.btnViewQuantity.Text = "Quantity";
             // 
             // btnViewPrice
             // 
             this.btnViewPrice.Name = "btnViewPrice";
-            this.btnViewPrice.Size = new System.Drawing.Size(152, 22);
+            this.btnViewPrice.Size = new System.Drawing.Size(120, 22);
             this.btnViewPrice.Text = "Price";
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(454, 0);
+            this.btnFind.Location = new System.Drawing.Point(404, 0);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(75, 23);
             this.btnFind.TabIndex = 2;
@@ -139,7 +140,7 @@
             // 
             // txtFind
             // 
-            this.txtFind.Location = new System.Drawing.Point(330, 2);
+            this.txtFind.Location = new System.Drawing.Point(280, 2);
             this.txtFind.Name = "txtFind";
             this.txtFind.Size = new System.Drawing.Size(118, 20);
             this.txtFind.TabIndex = 3;
@@ -152,7 +153,7 @@
             this.btnViewCart});
             this.menuStrip2.Location = new System.Drawing.Point(0, 252);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(531, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(491, 24);
             this.menuStrip2.TabIndex = 4;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -170,7 +171,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(444, 253);
+            this.btnClose.Location = new System.Drawing.Point(404, 252);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 5;
@@ -181,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 276);
+            this.ClientSize = new System.Drawing.Size(491, 276);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtFind);
             this.Controls.Add(this.btnFind);

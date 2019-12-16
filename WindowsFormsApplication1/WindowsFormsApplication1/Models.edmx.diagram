@@ -5,11 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="0e17a42204f641ab879bec1fed9af88d" Name="Diagram1">
-        <EntityTypeShape EntityType="MyDataModel.Cart" Width="1.5" PointX="5.25" PointY="1" />
-        <EntityTypeShape EntityType="MyDataModel.Item" Width="1.5" PointX="3" PointY="1" />
-        <EntityTypeShape EntityType="MyDataModel.Producer" Width="1.5" PointX="0.75" PointY="1.375" />
-        <AssociationConnector Association="MyDataModel.FK__Cart__ItemId__15502E78" />
-        <AssociationConnector Association="MyDataModel.FK__Item__ProducerID__1273C1CD" />
+        <EntityTypeShape EntityType="MyDataModel.Cart" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MyDataModel.Item" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MyDataModel.Producer" Width="1.5" PointX="4.875" PointY="1.25" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

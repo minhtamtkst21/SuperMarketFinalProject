@@ -14,15 +14,8 @@ namespace WindowsFormsApplication1
     
     public partial class Producer
     {
-        public Producer()
-        {
-            this.Items = new HashSet<Item>();
-        }
-    
         public int Id { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
-    
-        public virtual ICollection<Item> Items { get; set; }
     }
 }

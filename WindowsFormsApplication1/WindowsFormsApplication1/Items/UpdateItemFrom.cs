@@ -14,10 +14,12 @@ namespace WindowsFormsApplication1.Items
     {
         public int itemId;
         private ItemManagement business;
+        private Producers.ProducerManagement Pbusiness;
         public UpdateItemFrom(int id)
         {
             InitializeComponent();
             business = new ItemManagement();
+            Pbusiness = new Producers.ProducerManagement();
             this.itemId = id;
             this.Load += UpdateItemFrom_Load;
             this.btnCancel.Click += btnCancel_Click;
@@ -28,7 +30,7 @@ namespace WindowsFormsApplication1.Items
         {
             var name = this.txtName.Text;
             var price = int.Parse(this.txtPrice.Text);
-            var producer = int.Parse(this.txtProduce.Text);
+            var producer = (int)this.cobProducer.SelectedValue;
             var quantity = int.Parse(this.txtQuantity.Text);
 
             this.business.UpdateItem(this.itemId, name, producer, quantity, price);
@@ -47,8 +49,11 @@ namespace WindowsFormsApplication1.Items
             this.txtCode.Text = item.Code;
             this.txtName.Text = item.Name;
             this.txtPrice.Text = item.Price.ToString();
-            this.txtProduce.Text = item.Producer.ToString();
             this.txtQuantity.Text = item.Amount.ToString();
+
+            this.cobProducer.DataSource = this.Pbusiness.getProducer();
+            this.cobProducer.ValueMember = "Id";
+            this.cobProducer.DisplayMember = "Name";
         }
     }
 }

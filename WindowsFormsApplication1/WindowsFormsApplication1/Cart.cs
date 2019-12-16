@@ -15,12 +15,9 @@ namespace WindowsFormsApplication1
     public partial class Cart
     {
         public int Id { get; set; }
-        public int ItemId { get; set; }
         public string Name { get; set; }
-        public int PriceUnit { get; set; }
-        public int Quantity { get; set; }
-        public int Total { get; set; }
-    
-        public virtual Item Item { get; set; }
+        public Nullable<int> PriceUnit { get; set; }
+        public Nullable<int> Quantity { get; set; }
+        public Nullable<int> Total { get; set; }
     }
 }
