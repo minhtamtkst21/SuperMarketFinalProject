@@ -351,3 +351,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+WindowsFormsApplication1/WindowsFormsApplication1/Carts/CartManagement.cs
+*.resx
+*.cs
