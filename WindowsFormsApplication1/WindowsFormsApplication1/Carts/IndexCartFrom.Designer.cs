@@ -50,6 +50,7 @@
             this.grdViewCart.Location = new System.Drawing.Point(0, 24);
             this.grdViewCart.Name = "grdViewCart";
             this.grdViewCart.ReadOnly = true;
+            this.grdViewCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdViewCart.Size = new System.Drawing.Size(331, 261);
             this.grdViewCart.TabIndex = 0;
             // 

@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
             if (this.txtPass.Text == "vlu")
             {
                 new WindowsFormsApplication1.Items.IndexItemFrom().ShowDialog();
+                this.Close();
             }
             else
             {

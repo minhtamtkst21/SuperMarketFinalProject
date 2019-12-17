@@ -76,6 +76,12 @@
     <Compile Include="Carts\IndexCartFrom.Designer.cs">
       <DependentUpon>IndexCartFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Carts\UpdateItemInCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carts\UpdateItemInCart.Designer.cs">
+      <DependentUpon>UpdateItemInCart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,12 @@
     </Compile>
     <Compile Include="Items\AddItemFrom.Designer.cs">
       <DependentUpon>AddItemFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\FindItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\FindItem.Designer.cs">
+      <DependentUpon>FindItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\IndexItemFrom.cs">
       <SubType>Form</SubType>
@@ -146,11 +158,17 @@
     <EmbeddedResource Include="Carts\IndexCartFrom.resx">
       <DependentUpon>IndexCartFrom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Carts\UpdateItemInCart.resx">
+      <DependentUpon>UpdateItemInCart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\AddItemFrom.resx">
       <DependentUpon>AddItemFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\FindItem.resx">
+      <DependentUpon>FindItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\IndexItemFrom.resx">
       <DependentUpon>IndexItemFrom.cs</DependentUpon>

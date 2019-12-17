@@ -21,9 +21,6 @@ namespace WindowsFormsApplication1.Items
             this.btnAddItem.Click += btnAddItem_Click;
             this.btnEditItem.Click += btnEditItem_Click;
             this.btnDeleteItem.Click += btnDeleteItem_Click;
-            this.btnViewAZ.Click += btnViewAZ_Click;
-            this.btnViewPrice.Click += btnViewPrice_Click;
-            this.btnViewQuantity.Click += btnViewQuantity_Click;
             this.btnViewCart.Click += btnViewCart_Click;
             this.btnViewProducer.Click += btnViewProducer_Click;
             this.grdViewItem.DoubleClick += btnEditItem_Click;
@@ -31,6 +28,15 @@ namespace WindowsFormsApplication1.Items
             businness = new ItemManagement();
             Cbusiness = new Carts.CartManagement();
             this.btnBuy.Click += btnBuy_Click;
+            this.btnFind.Click += btnFind_Click;
+        }
+
+        void btnFind_Click(object sender, EventArgs e)
+        {
+            var id = int.Parse(this.txtFind.Text);
+            var item=this.businness.getItems(id);
+
+            new WindowsFormsApplication1.Items.FindItem(id).ShowDialog();
         }
 
         void btnBuy_Click(object sender, EventArgs e)
@@ -39,8 +45,8 @@ namespace WindowsFormsApplication1.Items
             {
                 var item = (Item)this.grdViewItem.SelectedRows[0].DataBoundItem;
                 int quantity=1;
-                this.Cbusiness.AddCart(item.Name, item.Price, quantity, item.Price * quantity);
-                item.Amount -= 1;
+                this.Cbusiness.AddCart(item.Name,item.Id, item.Price, quantity, item.Price * quantity);
+                this.businness.minusAmountItem(item.Id, 1);
                 this.loadAllItem();
             }
         }
@@ -53,28 +59,14 @@ namespace WindowsFormsApplication1.Items
         void btnViewProducer_Click(object sender, EventArgs e)
         {
             new WindowsFormsApplication1.Producers.IndexProducerFrom().ShowDialog();
+            this.Close();
         }
 
         void btnViewCart_Click(object sender, EventArgs e)
         {
             new WindowsFormsApplication1.Carts.IndexCartFrom().ShowDialog();
+            this.Close();
         }
-
-        void btnViewQuantity_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        void btnViewPrice_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        void btnViewAZ_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         void btnDeleteItem_Click(object sender, EventArgs e)
         {
             if (this.grdViewItem.SelectedRows.Count == 1)

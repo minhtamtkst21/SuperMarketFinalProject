@@ -24,6 +24,7 @@ namespace WindowsFormsApplication1.Producers
             this.btnViewCart.Click += btnViewCart_Click;
             this.btnViewItem.Click += btnViewItem_Click;
             this.btnClose.Click += btnClose_Click;
+            this.grbViewProducer.DoubleClick += btnEditProducer_Click;
         }
 
         void btnClose_Click(object sender, EventArgs e)
@@ -34,11 +35,13 @@ namespace WindowsFormsApplication1.Producers
         void btnViewItem_Click(object sender, EventArgs e)
         {
             new WindowsFormsApplication1.Items.IndexItemFrom().ShowDialog();
+            this.Close();
         }
 
         void btnViewCart_Click(object sender, EventArgs e)
         {
             new WindowsFormsApplication1.Carts.IndexCartFrom().ShowDialog();
+            this.Close();
         }
 
         void btnDeleteProducer_Click(object sender, EventArgs e)

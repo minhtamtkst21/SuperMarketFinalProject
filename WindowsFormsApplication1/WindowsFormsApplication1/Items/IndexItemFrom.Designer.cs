@@ -34,10 +34,6 @@
             this.btnAddItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEditItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDeleteItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnViewAZ = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnViewQuantity = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnViewPrice = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFind = new System.Windows.Forms.Button();
             this.txtFind = new System.Windows.Forms.TextBox();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
@@ -66,8 +62,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateItemToolStripMenuItem,
-            this.viewItemToolStripMenuItem});
+            this.updateItemToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(491, 24);
@@ -87,48 +82,20 @@
             // btnAddItem
             // 
             this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(134, 22);
+            this.btnAddItem.Size = new System.Drawing.Size(152, 22);
             this.btnAddItem.Text = "Add item";
             // 
             // btnEditItem
             // 
             this.btnEditItem.Name = "btnEditItem";
-            this.btnEditItem.Size = new System.Drawing.Size(134, 22);
+            this.btnEditItem.Size = new System.Drawing.Size(152, 22);
             this.btnEditItem.Text = "Edit item";
             // 
             // btnDeleteItem
             // 
             this.btnDeleteItem.Name = "btnDeleteItem";
-            this.btnDeleteItem.Size = new System.Drawing.Size(134, 22);
+            this.btnDeleteItem.Size = new System.Drawing.Size(152, 22);
             this.btnDeleteItem.Text = "Delete item";
-            // 
-            // viewItemToolStripMenuItem
-            // 
-            this.viewItemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnViewAZ,
-            this.btnViewQuantity,
-            this.btnViewPrice});
-            this.viewItemToolStripMenuItem.Name = "viewItemToolStripMenuItem";
-            this.viewItemToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.viewItemToolStripMenuItem.Text = "View Item";
-            // 
-            // btnViewAZ
-            // 
-            this.btnViewAZ.Name = "btnViewAZ";
-            this.btnViewAZ.Size = new System.Drawing.Size(120, 22);
-            this.btnViewAZ.Text = "AZ";
-            // 
-            // btnViewQuantity
-            // 
-            this.btnViewQuantity.Name = "btnViewQuantity";
-            this.btnViewQuantity.Size = new System.Drawing.Size(120, 22);
-            this.btnViewQuantity.Text = "Quantity";
-            // 
-            // btnViewPrice
-            // 
-            this.btnViewPrice.Name = "btnViewPrice";
-            this.btnViewPrice.Size = new System.Drawing.Size(120, 22);
-            this.btnViewPrice.Text = "Price";
             // 
             // btnFind
             // 
@@ -221,10 +188,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnAddItem;
         private System.Windows.Forms.ToolStripMenuItem btnEditItem;
         private System.Windows.Forms.ToolStripMenuItem btnDeleteItem;
-        private System.Windows.Forms.ToolStripMenuItem viewItemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem btnViewAZ;
-        private System.Windows.Forms.ToolStripMenuItem btnViewQuantity;
-        private System.Windows.Forms.ToolStripMenuItem btnViewPrice;
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.TextBox txtFind;
         private System.Windows.Forms.MenuStrip menuStrip2;

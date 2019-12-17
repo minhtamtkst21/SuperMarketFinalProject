@@ -5,9 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="0e17a42204f641ab879bec1fed9af88d" Name="Diagram1">
-        <EntityTypeShape EntityType="MyDataModel.Cart" Width="1.5" PointX="0.75" PointY="0.75" />
         <EntityTypeShape EntityType="MyDataModel.Item" Width="1.5" PointX="2.75" PointY="0.75" />
-        <EntityTypeShape EntityType="MyDataModel.Producer" Width="1.5" PointX="4.875" PointY="1.25" />
+        <EntityTypeShape EntityType="MyDataModel.Producer" Width="1.5" PointX="4.875" PointY="1.125" />
+        <EntityTypeShape EntityType="MyDataModel.Cart" Width="1.5" PointX="0.625" PointY="1.25" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

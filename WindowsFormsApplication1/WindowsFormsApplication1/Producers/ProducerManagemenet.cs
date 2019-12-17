@@ -29,13 +29,12 @@ namespace WindowsFormsApplication1.Producers
             db.Producers.Add(producer);
             db.SaveChanges();
         }
-        public void UpdateProducer(string id, string name)
+        public void UpdateProducer(int id, string name)
         {
-
-            var producer = new Producer();
+            db = new MyDataEntities();
+            var producer = db.Producers.Find(id);
             producer.Name = name;
 
-            db = new MyDataEntities();
             db.Entry(producer).State = System.Data.EntityState.Modified;
             db.SaveChanges();
         }

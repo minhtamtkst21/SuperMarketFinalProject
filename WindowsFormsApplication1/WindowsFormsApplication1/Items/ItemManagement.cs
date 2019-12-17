@@ -34,13 +34,13 @@ namespace WindowsFormsApplication1.Items
         }
         public void UpdateItem(int id, string name, int producer, int quantity, int price)
         {
-            var item = new Item();
+            db = new MyDataEntities();
+            var item = db.Items.Find(id);
             item.Name = name;
             item.Producer = producer;
             item.Amount = quantity;
             item.Price = price;
 
-            db = new MyDataEntities();
             db.Entry(item).State = System.Data.EntityState.Modified;
             db.SaveChanges();
         }
@@ -49,6 +49,13 @@ namespace WindowsFormsApplication1.Items
             db = new MyDataEntities();
             var item = db.Items.Find(id);
             db.Items.Remove(item);
+            db.SaveChanges();
+        }
+        public void minusAmountItem(int id,int quantity)
+        {
+            db = new MyDataEntities();
+            var item = this.getItems(id);
+            item.Amount -= quantity;
             db.SaveChanges();
         }
     }

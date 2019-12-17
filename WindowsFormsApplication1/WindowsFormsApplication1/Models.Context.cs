@@ -25,8 +25,8 @@ namespace WindowsFormsApplication1
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<Cart> Carts { get; set; }
         public DbSet<Item> Items { get; set; }
         public DbSet<Producer> Producers { get; set; }
+        public DbSet<Cart> Carts { get; set; }
     }
 }

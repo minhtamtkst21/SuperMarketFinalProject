@@ -24,12 +24,6 @@ namespace WindowsFormsApplication1.Carts
             this.btnEditItem.Click += btnEditItem_Click;
             this.Load += IndexCartFrom_Load;
         }
-
-        void btnBuy_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         void IndexCartFrom_Load(object sender, EventArgs e)
         {
             this.ViewAllCart();
@@ -43,7 +37,13 @@ namespace WindowsFormsApplication1.Carts
 
         void btnEditItem_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if (this.grdViewCart.SelectedRows.Count == 1)
+            {
+                var cart = (Cart)this.grdViewCart.SelectedRows[0].DataBoundItem;
+                var updateForm = new UpdateItemInCart(cart.Id);
+                updateForm.ShowDialog();
+                this.loadAllCart();
+            }
         }
 
         void btnDeleteItem_Click(object sender, EventArgs e)
@@ -70,6 +70,7 @@ namespace WindowsFormsApplication1.Carts
         void btnViewProducer_Click(object sender, EventArgs e)
         {
             new WindowsFormsApplication1.Producers.IndexProducerFrom().ShowDialog();
+            this.Close();
         }
 
         void btnClose_Click(object sender, EventArgs e)
@@ -80,6 +81,7 @@ namespace WindowsFormsApplication1.Carts
         void btnViewItem_Click(object sender, EventArgs e)
         {
             new WindowsFormsApplication1.Items.IndexItemFrom().ShowDialog();
+            this.Close();
         }
     }
 }

@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public Nullable<int> Id_item { get; set; }
         public Nullable<int> PriceUnit { get; set; }
         public Nullable<int> Quantity { get; set; }
         public Nullable<int> Total { get; set; }

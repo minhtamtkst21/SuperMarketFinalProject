@@ -19,16 +19,18 @@ namespace WindowsFormsApplication1.Carts
             db = new MyDataEntities();
             return db.Carts.Find(id);
         }
-        public void AddCart(string name, int priceunit, int quantity, int total)
+        public void AddCart(string name,int Id_Item, int priceunit, int quantity, int total)
         {
             var cart = new Cart();
             cart.Name = name;
             cart.PriceUnit = priceunit;
             cart.Quantity = quantity;
             cart.Total = total;
+            cart.Id_item = Id_Item;
 
             db = new MyDataEntities();
             db.Carts.Add(cart);
+            db.SaveChanges();
         }
         public void DeleteCart(int id)
         {
@@ -36,13 +38,14 @@ namespace WindowsFormsApplication1.Carts
             var cart = db.Carts.Find(id);
 
             db.Carts.Remove(cart);
+            db.SaveChanges();
         }
         public void UpdateCart(int id,int quantity)
         {
-            var cart = new Cart();
+            db = new MyDataEntities();
+            var cart = db.Carts.Find(id);
             cart.Quantity = quantity;
 
-            db = new MyDataEntities();
             db.Entry(cart).State = System.Data.EntityState.Modified;
             db.SaveChanges();
         }
