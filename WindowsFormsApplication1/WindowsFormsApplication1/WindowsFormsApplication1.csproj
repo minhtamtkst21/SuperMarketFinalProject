@@ -82,10 +82,10 @@
     <Compile Include="Carts\UpdateItemInCart.Designer.cs">
       <DependentUpon>UpdateItemInCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Producers\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Producers\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Item.cs">
@@ -161,7 +161,7 @@
     <EmbeddedResource Include="Carts\UpdateItemInCart.resx">
       <DependentUpon>UpdateItemInCart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Producers\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\AddItemFrom.resx">
