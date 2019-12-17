@@ -32,7 +32,8 @@ namespace WindowsFormsApplication1.Carts
             var oldCart=this.business.getCarts(this.CartId);
             var oldQuantity=(int)oldCart.Quantity;
             var quantity = int.Parse(this.txtQuantity.Text);
-            this.business.UpdateCart(this.CartId, quantity);
+            int total = (int)cart.PriceUnit * (int)quantity;
+            this.business.UpdateCart(this.CartId, quantity, total);
             this.Ibusiness.minusAmountItem((int) cart.Id_item, quantity - oldQuantity);
             this.Close();
         }

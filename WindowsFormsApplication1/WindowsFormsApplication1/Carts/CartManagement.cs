@@ -40,11 +40,12 @@ namespace WindowsFormsApplication1.Carts
             db.Carts.Remove(cart);
             db.SaveChanges();
         }
-        public void UpdateCart(int id,int quantity)
+        public void UpdateCart(int id,int quantity,int total)
         {
             db = new MyDataEntities();
             var cart = db.Carts.Find(id);
             cart.Quantity = quantity;
+            cart.Total = total;
 
             db.Entry(cart).State = System.Data.EntityState.Modified;
             db.SaveChanges();
