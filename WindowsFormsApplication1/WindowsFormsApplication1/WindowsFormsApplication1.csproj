@@ -134,10 +134,10 @@
     <Compile Include="Producer.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
-    <Compile Include="AddProducer.cs">
+    <Compile Include="Producers\AddProducer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddProducer.Designer.cs">
+    <Compile Include="Producers\AddProducer.Designer.cs">
       <DependentUpon>AddProducer.cs</DependentUpon>
     </Compile>
     <Compile Include="Producers\IndexProducerFrom.cs">
@@ -147,10 +147,10 @@
       <DependentUpon>IndexProducerFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="Producers\ProducerManagemenet.cs" />
-    <Compile Include="UpdateProducer.cs">
+    <Compile Include="Producers\UpdateProducer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateProducer.Designer.cs">
+    <Compile Include="Producers\UpdateProducer.Designer.cs">
       <DependentUpon>UpdateProducer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -176,13 +176,13 @@
     <EmbeddedResource Include="Items\UpdateItemFrom.resx">
       <DependentUpon>UpdateItemFrom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddProducer.resx">
+    <EmbeddedResource Include="Producers\AddProducer.resx">
       <DependentUpon>AddProducer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Producers\IndexProducerFrom.resx">
       <DependentUpon>IndexProducerFrom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateProducer.resx">
+    <EmbeddedResource Include="Producers\UpdateProducer.resx">
       <DependentUpon>UpdateProducer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
